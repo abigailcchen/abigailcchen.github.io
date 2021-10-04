@@ -1,0 +1,132 @@
+#subtitle {
+    text-align: center;
+    font-family: Roboto;
+} 
+
+.start-btn btn {
+    text-align: center;
+    font-family: Roboto;
+}
+
+:root {
+    --hue-neutral: 200;
+    --hue-wrong: 0;
+    --hue-correct: 145;
+}
+
+body {
+    --hue: var(--hue-natural);
+    padding: 0;
+    margin: 0;
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    background-color: #E6E6E6;
+}
+
+body.correct {
+    --hue: var(--hue-correct);
+}
+
+body.wrong {
+    --hue: var(--hue-wrong);
+}
+
+.container {
+    width: 800px;
+    max-width: 80%;
+   border-radius: 5px;
+    padding: 10px;
+}
+
+.btn-grid {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    gap: 10px;
+    margin: 20px 0;
+}
+
+.btn {
+    --hue: var(--hue-neutral);
+    background-color: white;
+    border: 0px;
+    border-radius: 50px;
+    padding: 15px;
+    color: black;
+    outline: none;
+    text-align: center;
+    font-family: Lexend Deca;
+}
+
+.btn:hover {
+    border-color: white;
+}
+
+.btn.correct{
+    background-color: #28B376;
+    color: black;
+}
+
+.btn.wrong{
+    background-color: #BF212F;
+}
+
+.start-btn, .next-btn {
+ font-size: 1.5 rem;
+ font-weight: bold;
+ padding: 10px 20px;   
+}
+
+.controls {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hide {
+    display: none;
+}
+
+#question {
+    font-size: 100px;
+    text-align: center;
+    font-family: Lexend Deca;
+    line-height: 120%;
+}
+
+body {
+    position: relative!important;
+    }
+    
+    body:before {
+    content: '';
+    position: absolute;
+    z-index: 2;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    pointer-events: none;
+    background-image: url(https://divi.space/wp-content/uploads/2019/02/hearts.png);
+    animation: falling-hearts 18s linear infinite;
+    }
+    @keyframes falling-hearts {
+    0% {background-position: 0% 30%;}
+    }
+    
+    @-moz-keyframes falling-hearts {
+    0% {background-position: 0% 30%;}
+    }
+    
+    @-webkit-keyframes falling-hearts {
+    0% {background-position: 0% 30%;}
+}
+
+img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
